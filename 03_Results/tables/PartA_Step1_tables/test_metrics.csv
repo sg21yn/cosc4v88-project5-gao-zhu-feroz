@@ -1,0 +1,13 @@
+model,metric,value,ci_low,ci_high
+LogisticRegression,AUC,0.7214,0.7046,0.7388
+LogisticRegression,F1,0.5174,0.4951,0.5399
+LogisticRegression,Recall (defaulters),0.5365,0.5114,0.5651
+LogisticRegression,Precision,0.4996,0.4745,0.5257
+LogisticRegression,Accuracy,0.7787,0.7682,0.7897
+LogisticRegression,Brier score,0.1444,0.1389,0.1502
+XGBoost,AUC,0.7861,0.7708,0.7999
+XGBoost,F1,0.5561,0.5337,0.5776
+XGBoost,Recall (defaulters),0.5848,0.5565,0.6116
+XGBoost,Precision,0.5301,0.5056,0.5553
+XGBoost,Accuracy,0.7935,0.7832,0.8035
+XGBoost,Brier score,0.133,0.1274,0.1386

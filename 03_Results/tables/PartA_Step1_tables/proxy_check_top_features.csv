@@ -1,0 +1,13 @@
+sensitive attribute,feature,abs correlation
+SEX (female),PAY_2,0.071
+SEX (female),PAY_3,0.066
+SEX (female),PAY_4,0.06
+AGE (40 or older),LIMIT_BAL,0.047
+AGE (40 or older),BILL_AMT1,0.027
+AGE (40 or older),BILL_AMT2,0.026
+EDUCATION (graduate school),LIMIT_BAL,0.259
+EDUCATION (graduate school),PAY_2,0.169
+EDUCATION (graduate school),PAY_3,0.16
+MARRIAGE (married),LIMIT_BAL,0.104
+MARRIAGE (married),PAY_5,0.034
+MARRIAGE (married),PAY_6,0.032

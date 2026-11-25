@@ -1,0 +1,21 @@
+model,attribute,group,n,defaulters,recall,too_small
+LogisticRegression,SEX,female,3628,755,0.5536,False
+LogisticRegression,SEX,male,2372,572,0.514,False
+LogisticRegression,AGE,<30,1926,421,0.5986,False
+LogisticRegression,AGE,30-39,2206,439,0.4875,False
+LogisticRegression,AGE,40-49,1296,318,0.5126,False
+LogisticRegression,AGE,50+,572,149,0.557,False
+LogisticRegression,EDU,graduate school,2141,412,0.4709,False
+LogisticRegression,EDU,high school,989,262,0.5496,False
+LogisticRegression,EDU,others,95,7,0.1429,True
+LogisticRegression,EDU,university,2775,646,0.5774,False
+XGBoost,SEX,female,3628,755,0.5907,False
+XGBoost,SEX,male,2372,572,0.5769,False
+XGBoost,AGE,<30,1926,421,0.639,False
+XGBoost,AGE,30-39,2206,439,0.5444,False
+XGBoost,AGE,40-49,1296,318,0.5723,False
+XGBoost,AGE,50+,572,149,0.5772,False
+XGBoost,EDU,graduate school,2141,412,0.585,False
+XGBoost,EDU,high school,989,262,0.5878,False
+XGBoost,EDU,others,95,7,0.1429,True
+XGBoost,EDU,university,2775,646,0.5882,False

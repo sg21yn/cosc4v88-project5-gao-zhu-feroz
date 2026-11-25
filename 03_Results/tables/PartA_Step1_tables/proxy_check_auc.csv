@@ -1,0 +1,5 @@
+sensitive attribute,proxy AUC (test)
+SEX (female),0.604
+AGE (40 or older),0.571
+EDUCATION (graduate school),0.687
+MARRIAGE (married),0.562
