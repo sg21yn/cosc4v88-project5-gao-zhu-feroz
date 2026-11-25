@@ -1,0 +1,33 @@
+split,model,metric,n_clients,mean,ci_low,ci_high
+test,LogisticRegression,SHAP efficiency: mean |error| (log-odds),300,0.0,0.0,0.0
+test,LogisticRegression,LIME local R² (own samples),300,0.1467,0.1349,0.1583
+test,LogisticRegression,LIME relative WMSE (real neighbours),300,31.1761,20.1208,45.4686
+test,LogisticRegression,Deletion top-3 change: SHAP,300,0.0936,0.0836,0.1041
+test,LogisticRegression,Deletion top-3 change: LIME,300,0.09,0.0803,0.1003
+test,LogisticRegression,Deletion 3 random features,300,0.0236,0.0209,0.0264
+test,LogisticRegression,Share of clients where SHAP top-3 > random,300,0.94,0.9133,0.9633
+test,LogisticRegression,Share of clients where LIME top-3 > random,300,0.8733,0.8333,0.9067
+test,XGBoost,SHAP efficiency: mean |error| (log-odds),300,0.0,0.0,0.0
+test,XGBoost,LIME local R² (own samples),300,0.1795,0.1602,0.2
+test,XGBoost,LIME relative WMSE (real neighbours),300,4.2041,3.2842,5.3138
+test,XGBoost,Deletion top-3 change: SHAP,300,0.1128,0.098,0.1272
+test,XGBoost,Deletion top-3 change: LIME,300,0.098,0.0845,0.1124
+test,XGBoost,Deletion 3 random features,300,0.0327,0.0293,0.0363
+test,XGBoost,Share of clients where SHAP top-3 > random,300,0.8633,0.8233,0.9
+test,XGBoost,Share of clients where LIME top-3 > random,300,0.7767,0.7332,0.8233
+val,LogisticRegression,SHAP efficiency: mean |error| (log-odds),200,0.0,0.0,0.0
+val,LogisticRegression,LIME local R² (own samples),200,0.1356,0.1246,0.1483
+val,LogisticRegression,LIME relative WMSE (real neighbours),200,36.6041,20.6286,57.0493
+val,LogisticRegression,Deletion top-3 change: SHAP,200,0.0934,0.0781,0.1084
+val,LogisticRegression,Deletion top-3 change: LIME,200,0.0897,0.0755,0.1039
+val,LogisticRegression,Deletion 3 random features,200,0.0226,0.0191,0.0269
+val,LogisticRegression,Share of clients where SHAP top-3 > random,200,0.94,0.905,0.97
+val,LogisticRegression,Share of clients where LIME top-3 > random,200,0.87,0.82,0.915
+val,XGBoost,SHAP efficiency: mean |error| (log-odds),200,0.0,0.0,0.0
+val,XGBoost,LIME local R² (own samples),200,0.1485,0.1315,0.1673
+val,XGBoost,LIME relative WMSE (real neighbours),200,7.2911,3.9103,11.9846
+val,XGBoost,Deletion top-3 change: SHAP,200,0.0992,0.0836,0.115
+val,XGBoost,Deletion top-3 change: LIME,200,0.0888,0.0739,0.1055
+val,XGBoost,Deletion 3 random features,200,0.0275,0.0246,0.0307
+val,XGBoost,Share of clients where SHAP top-3 > random,200,0.855,0.805,0.9
+val,XGBoost,Share of clients where LIME top-3 > random,200,0.815,0.76,0.87
