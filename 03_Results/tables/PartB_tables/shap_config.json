@@ -1,0 +1,8 @@
+{
+  "background_size": 150,
+  "effective_background_size": 100,
+  "background_source": "training_set",
+  "output_unit": "log_odds",
+  "note_for_xgboost": "TreeExplainer uses model_output='raw' which returns log-odds values",
+  "random_seed": 42
+}

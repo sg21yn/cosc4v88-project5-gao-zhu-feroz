@@ -1,0 +1,7 @@
+{
+  "pay_series_avg_correlation": 0.7139,
+  "bill_amt_series_avg_correlation": 0.909,
+  "pay_series_shap_weight_std_lr": 0.1664,
+  "bill_series_shap_weight_std_lr": 0.0601,
+  "key_conclusion": "Highly correlated sequential features share credit in the explanations, which can reduce stability and cross-method agreement"
+}

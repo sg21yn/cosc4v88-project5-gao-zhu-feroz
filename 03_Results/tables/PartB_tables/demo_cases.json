@@ -1,0 +1,16 @@
+{
+  "success_case_xgb": {
+    "ID": 17775,
+    "proba": 0.7515,
+    "lime_stability_jaccard": 1.0,
+    "shap_lime_agreement": 1.0
+  },
+  "failure_case_lr": {
+    "ID": 25906,
+    "lime_stability_jaccard": 0.262
+  },
+  "failure_case_xgb": {
+    "ID": 6391,
+    "lime_stability_jaccard": 0.272
+  }
+}
