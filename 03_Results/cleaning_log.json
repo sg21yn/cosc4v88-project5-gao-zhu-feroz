@@ -1,0 +1,37 @@
+{
+  "rows_raw": 30000,
+  "missing_values": 0,
+  "duplicate_IDs": 0,
+  "EDUCATION_before": {
+    "0": 14,
+    "1": 10585,
+    "2": 14030,
+    "3": 4917,
+    "4": 123,
+    "5": 280,
+    "6": 51
+  },
+  "MARRIAGE_before": {
+    "0": 54,
+    "1": 13659,
+    "2": 15964,
+    "3": 323
+  },
+  "EDUCATION_after": {
+    "1": 10585,
+    "2": 14030,
+    "3": 4917,
+    "4": 468
+  },
+  "MARRIAGE_after": {
+    "1": 13659,
+    "2": 15964,
+    "3": 377
+  },
+  "default_rate": 0.2212,
+  "notes": [
+    "PAY_0 renamed to PAY_1; target renamed to default",
+    "EDUCATION 0/5/6 merged into 4 (others); MARRIAGE 0 merged into 3 (others)",
+    "PAY_1-6 values -2 and 0 are undocumented and kept unchanged (limitation)"
+  ]
+}

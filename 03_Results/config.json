@@ -1,0 +1,104 @@
+{
+  "seed": 42,
+  "split": {
+    "train": 0.6,
+    "val": 0.2,
+    "test": 0.2,
+    "stratified_on": "default"
+  },
+  "target": "default",
+  "features": [
+    "LIMIT_BAL",
+    "PAY_1",
+    "PAY_2",
+    "PAY_3",
+    "PAY_4",
+    "PAY_5",
+    "PAY_6",
+    "BILL_AMT1",
+    "BILL_AMT2",
+    "BILL_AMT3",
+    "BILL_AMT4",
+    "BILL_AMT5",
+    "BILL_AMT6",
+    "PAY_AMT1",
+    "PAY_AMT2",
+    "PAY_AMT3",
+    "PAY_AMT4",
+    "PAY_AMT5",
+    "PAY_AMT6"
+  ],
+  "use_sensitive_as_features": false,
+  "sensitive_attributes": [
+    "SEX",
+    "EDUCATION",
+    "MARRIAGE",
+    "AGE"
+  ],
+  "thresholds_chosen_on_validation": {
+    "LogisticRegression": 0.25,
+    "XGBoost": 0.26
+  },
+  "logistic_regression": {
+    "scaler": "StandardScaler",
+    "max_iter": 2000
+  },
+  "xgboost": {
+    "n_estimators": 1000,
+    "learning_rate": 0.05,
+    "max_depth": 4,
+    "subsample": 0.8,
+    "colsample_bytree": 0.8,
+    "min_child_weight": 5,
+    "reg_lambda": 1.0,
+    "eval_metric": "auc",
+    "early_stopping_rounds": 50,
+    "random_state": 42,
+    "n_jobs": -1,
+    "best_iteration": 143
+  },
+  "versions": {
+    "python": "3.13.18",
+    "numpy": "2.4.6",
+    "pandas": "2.2.3",
+    "scikit-learn": "1.6.1",
+    "xgboost": "3.4.1"
+  },
+  "cleaning_log": {
+    "rows_raw": 30000,
+    "missing_values": 0,
+    "duplicate_IDs": 0,
+    "EDUCATION_before": {
+      "0": 14,
+      "1": 10585,
+      "2": 14030,
+      "3": 4917,
+      "4": 123,
+      "5": 280,
+      "6": 51
+    },
+    "MARRIAGE_before": {
+      "0": 54,
+      "1": 13659,
+      "2": 15964,
+      "3": 323
+    },
+    "EDUCATION_after": {
+      "1": 10585,
+      "2": 14030,
+      "3": 4917,
+      "4": 468
+    },
+    "MARRIAGE_after": {
+      "1": 13659,
+      "2": 15964,
+      "3": 377
+    },
+    "default_rate": 0.2212,
+    "notes": [
+      "PAY_0 renamed to PAY_1; target renamed to default",
+      "EDUCATION 0/5/6 merged into 4 (others); MARRIAGE 0 merged into 3 (others)",
+      "PAY_1-6 values -2 and 0 are undocumented and kept unchanged (limitation)"
+    ]
+  }
+}
