@@ -1,0 +1,9 @@
+scikit-learn==1.6.1
+xgboost==3.4.1
+pandas==2.2.3
+numpy
+scipy
+shap==0.54.1
+lime==0.2.0.1
+matplotlib
+joblib
