@@ -33,7 +33,7 @@ All notebooks are saved **with their outputs**, so every result can be read with
 
 Steps 2 and 3 use the same 500 explained clients (200 validation + 300 test, listed in `explain_sample.csv`) and the same 150-client SHAP background.
 
-**Part C note:** the saved Part C results come from a pilot on an earlier set of 100 explained test clients (split 50/50 into calibration and evaluation), so `part_c_analysis.py` expects those earlier input files and will not run against the 500-client tables in this repository. An update of Part C to the 500-client sample is in progress.
+Part C calibrates its flag on the 200 validation clients and evaluates it on the 300 test clients. `workload_matched.csv` compares each single signal with the four-signal flag at the same number of reviews.
 
 ## How to run
 
@@ -49,7 +49,7 @@ The models were saved with scikit-learn 1.6.1. Loading them with another version
 
 ## Fixed settings
 
-- Random seed 42 for the split, models, explanation samples and bootstrap (Part C uses seed 88 only for its record-keeping)
+- Random seed 42 for the split, models, explanation samples and bootstrap
 - Stratified 60/20/20 split: 18,000 / 6,000 / 6,000 clients
 - 19 model inputs; sex, education, marital status and age are kept for auditing only, never as inputs
 - Decision thresholds chosen on validation: 0.25 (Logistic Regression), 0.26 (XGBoost)
@@ -60,7 +60,8 @@ The demo uses saved outputs, not a live run:
 
 - `03_Results/figures/shap_demo_success_xgb.png`: client 17775, a defaulter correctly flagged by XGBoost, with a stable explanation that SHAP and LIME agree on
 - `03_Results/figures/shap_demo_failure_xgb.png`: client 6391, whose LIME explanation changes from run to run
-- `03_Results/tables/PartB_tables/demo_cases.json` lists the demo clients and their scores
+- `03_Results/figures/flag_result.png` and `ablation_result.png`: how many deletion-test failures the Part C flag catches, and how single signals compare at the same review workload
+- `03_Results/tables/PartB_tables/demo_cases.json` and `PartC_tables/demo_cases.csv` list the demo clients and their scores
 
 ## Data
 
